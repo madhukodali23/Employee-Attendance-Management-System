@@ -4,7 +4,6 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const cors = require("cors");
 
 app.use(cors({
   origin: [
