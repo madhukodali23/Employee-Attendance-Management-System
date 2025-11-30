@@ -4,7 +4,18 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 
 dotenv.config();
-app.use(cors());
+const cors = require("cors");
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://employee-attendance-management-syst-mu.vercel.app"
+  ],
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type, Authorization"
+}));
+
+
 app.use(express.json());
 
 const connectDB = require("./config/db");
