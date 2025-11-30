@@ -1,0 +1,107 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f1f3f6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+/* Login/Register & Pages Container */
+.card-container {
+  width: 420px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading */
+.card-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Inputs */
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0 18px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #000;
+  background: #fff;
+}
+
+/* Buttons */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #333;
+}
+
+/* Register Link */
+.link-text {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.link-text a {
+  color: #0066ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard / Other Pages */
+.page-box {
+  width: 650px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+  margin-top: 20px;
+}
+
+.card {
+  background: #f8f8f8;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
